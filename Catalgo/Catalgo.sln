@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalgo", "Catalgo\Catalgo.csproj", "{804249AD-6BED-4F4D-B42F-ECCD9F2B6385}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{804249AD-6BED-4F4D-B42F-ECCD9F2B6385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{804249AD-6BED-4F4D-B42F-ECCD9F2B6385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{804249AD-6BED-4F4D-B42F-ECCD9F2B6385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{804249AD-6BED-4F4D-B42F-ECCD9F2B6385}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7118B618-0918-40DE-A75E-79F260363655}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+D:\PV\CatalogoCine\Catalgo\Catalgo\bin\Debug\Catalgo.exe.config
+D:\PV\CatalogoCine\Catalgo\Catalgo\bin\Debug\Catalgo.exe
+D:\PV\CatalogoCine\Catalgo\Catalgo\bin\Debug\Catalgo.pdb
+D:\PV\CatalogoCine\Catalgo\Catalgo\obj\Debug\Catalgo.csproj.AssemblyReference.cache
+D:\PV\CatalogoCine\Catalgo\Catalgo\obj\Debug\Catalgo.csproj.CoreCompileInputs.cache
+D:\PV\CatalogoCine\Catalgo\Catalgo\obj\Debug\Catalgo.exe
+D:\PV\CatalogoCine\Catalgo\Catalgo\obj\Debug\Catalgo.pdb
