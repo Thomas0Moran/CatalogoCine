@@ -108,11 +108,61 @@ namespace Catalgo
                 Clasico = false,
                 Genero = Comedia
             });
+
+            Peliculas.Add(new Pelicula()
+            {
+                Id = 7,
+                Titulo = "Avengers Infinity War",
+                Año = 2018,
+                Director = "JoeYAnthonyRusso",
+                Clasico = false,
+                Genero = null //ciencia ficcion
+            });
         }
 
         public IEnumerable<Pelicula> ObtenerPorAño(int año)
         {
-            return Peliculas.Where(peli => peli.Año == año);
+            return Peliculas
+                .Where(peli => peli.Año == año)
+                .OrderBy(peli => peli.Titulo);
         }
+
+        public IEnumerable<Pelicula> ObtenerPorAñoConsulta(int año)
+        {
+            return from p in Peliculas
+                   where p.Año == año
+                   orderby p.Titulo
+                   select p;
+
+        }
+
+        public IEnumerable<Pelicula> ObtenerPorGenero(int genero)
+        {
+            return Peliculas
+                //.Where(peli =>peli.Genero!=null && peli.Genero.Id == genero)
+                .Where(peli => peli.Genero?.Id == genero)
+                .OrderBy(peli => peli.Titulo);
+        }
+
+        public IEnumerable<Pelicula>BuscarPorTitulo(string busqueda)
+        {
+            return Peliculas
+                .Where(peli => peli.Titulo.ToUpper().Contains(busqueda.ToUpper()))
+                .OrderBy(peli => peli.Titulo);
+        }
+
+        public void MostrarTodasLasPeliculas()
+        {
+            var resultado= from p in Peliculas
+                   orderby p.Titulo
+                   select new { p.Titulo, p.Año };
+
+            foreach (var item in resultado)
+            {
+                Console.WriteLine($"Titulo: {item.Titulo}, Año: {item.Año}");
+            }
+        }
+
+
     }
 }

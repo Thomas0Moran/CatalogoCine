@@ -24,16 +24,27 @@ namespace Catalgo
             }
 
             CatalogoPeliculas miCatalog = new CatalogoPeliculas();
+            var listaPeliculas = miCatalog.ObtenerPorAñoConsulta(año);
+            MostrarPeliculas(listaPeliculas);
 
-            var listaPeliculas = miCatalog.ObtenerPorAño(año);
+            var ListaPeliculasGenero = miCatalog.ObtenerPorGenero(3);
+            MostrarPeliculas(ListaPeliculasGenero);
 
+            var listaPeliculasTitulo = miCatalog.BuscarPorTitulo("white");
+            MostrarPeliculas(listaPeliculasTitulo);
+
+            miCatalog.MostrarTodasLasPeliculas();
+
+            Console.ReadKey();
+        }
+
+        static void MostrarPeliculas(IEnumerable<Pelicula>peliculas)
+        {
             Console.WriteLine("Listado de peliculas por año");
-            foreach (var pelicula in listaPeliculas)
+            foreach (var pelicula in peliculas)
             {
                 Console.WriteLine($"Titulo:{pelicula.Titulo},Año {pelicula.Año}");
             }
-
-            Console.ReadKey();
         }
     }
 }
