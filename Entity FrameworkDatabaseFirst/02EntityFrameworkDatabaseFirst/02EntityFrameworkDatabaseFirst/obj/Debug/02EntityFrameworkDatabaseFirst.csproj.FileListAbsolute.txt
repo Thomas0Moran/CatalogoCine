@@ -1,0 +1,12 @@
+D:\PV\Laboratorio- Entity Framework y LINQ\Entity FrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\bin\Debug\02EntityFrameworkDatabaseFirst.exe.config
+D:\PV\Laboratorio- Entity Framework y LINQ\Entity FrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\bin\Debug\02EntityFrameworkDatabaseFirst.exe
+D:\PV\Laboratorio- Entity Framework y LINQ\Entity FrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\bin\Debug\02EntityFrameworkDatabaseFirst.pdb
+D:\PV\Laboratorio- Entity Framework y LINQ\Entity FrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\bin\Debug\EntityFramework.dll
+D:\PV\Laboratorio- Entity Framework y LINQ\Entity FrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\bin\Debug\EntityFramework.SqlServer.dll
+D:\PV\Laboratorio- Entity Framework y LINQ\Entity FrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\bin\Debug\EntityFramework.xml
+D:\PV\Laboratorio- Entity Framework y LINQ\Entity FrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\bin\Debug\EntityFramework.SqlServer.xml
+D:\PV\Laboratorio- Entity Framework y LINQ\Entity FrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\obj\Debug\02EntityFrameworkDatabaseFirst.csproj.AssemblyReference.cache
+D:\PV\Laboratorio- Entity Framework y LINQ\Entity FrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\obj\Debug\02EntityFrameworkDatabaseFirst.csproj.CoreCompileInputs.cache
+D:\PV\Laboratorio- Entity Framework y LINQ\Entity FrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\obj\Debug\02EntityFrameworkDatabaseFirst.csproj.CopyComplete
+D:\PV\Laboratorio- Entity Framework y LINQ\Entity FrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\obj\Debug\02EntityFrameworkDatabaseFirst.exe
+D:\PV\Laboratorio- Entity Framework y LINQ\Entity FrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\02EntityFrameworkDatabaseFirst\obj\Debug\02EntityFrameworkDatabaseFirst.pdb
