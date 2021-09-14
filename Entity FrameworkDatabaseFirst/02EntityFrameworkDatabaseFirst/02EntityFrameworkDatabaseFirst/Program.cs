@@ -10,33 +10,28 @@ namespace _02EntityFrameworkDatabaseFirst
     {
         static void Main(string[] args)
         {
+            RegionConsola regionConsola = new RegionConsola();
 
-            NorthwindEntities entities = new NorthwindEntities();
+            Console.WriteLine("********************************************");
+            Console.WriteLine("** ADMINISTRAR LAS REGIONES**");
+            Console.WriteLine("********************************************");
 
-            /*
-            Customer costumer = new Customer()
+            Console.WriteLine("1- Listar las regiones");
+            Console.WriteLine("S- Salir de la aplicacion");
+
+            Console.WriteLine("Ingrese la opcion seleccionada");
+
+            string opcion = Console.ReadLine();
+
+            switch (opcion.ToUpper().Trim())
             {
-                CustomerID = "EDUIT",
-                CompanyName = "EducacionIT",
-                Address = "Lavalle",
-                City = "CABA",
-                ContactName = "contacto@gmail.com",
-                ContactTitle = "Mail de contacto",
-                Country = "AR",
-                Phone = "08001110000",
-                PostalCode = "1001",
-                Region = "CABA",
-            };
-            entities.Customers.Add(costumer);
-            entities.SaveChanges();
-            */
-            
-            
-            var lista = entities.Customers.ToList();
-            foreach(var cliente in lista)
-            {
-                Console.WriteLine(cliente.CompanyName);
+                case "1":
+                    regionConsola.MostrarRegiones();
+                    break;
+                case "S":
+                    break;
             }
+            
             Console.ReadKey();
         }
     }

@@ -141,6 +141,8 @@
     <Compile Include="Region.cs">
       <DependentUpon>NorthwindModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="RegionConsola.cs" />
+    <Compile Include="RegionDataAccess.cs" />
     <Compile Include="SalesByCategory_Result.cs">
       <DependentUpon>NorthwindModel.tt</DependentUpon>
     </Compile>
