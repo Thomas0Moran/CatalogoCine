@@ -22,6 +22,7 @@ namespace _02EntityFrameworkDatabaseFirst
             Console.WriteLine("1-Crear nueva region");
             Console.WriteLine("2-Actualizar una region");
             Console.WriteLine("3-Borrar region");
+            Console.WriteLine("4-Obtener territorios de una region");
             Console.WriteLine();
             Console.WriteLine("Ingrese la opcion seleccionada:");
             string opcion = Console.ReadLine();
@@ -36,8 +37,35 @@ namespace _02EntityFrameworkDatabaseFirst
                 case "3":
                     BorrarRegion();
                     break;
+                case "4":
+                    ListarTerritorios();
+                    break;
             }
 
+        }
+
+        private void ListarTerritorios()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Ingrese el identificador de la region:");
+
+            string idIngresando = Console.ReadLine();
+            int id = Convert.ToInt32(idIngresando);
+            Region region = dataAccess.ObtenerRegion(id);
+            if (region == null)
+            {
+                Console.WriteLine("No ingreso el ID de una region existente");
+            }
+            else
+            {
+                Console.WriteLine();
+                Console.WriteLine($"Territorios de {region.RegionID}-{region.RegionDescription}");
+                List<Territory> territorios = region.Territories.ToList();
+                foreach(var territorio in territorios)
+                {
+                    Console.WriteLine($"Territorio: {territorio.TerritoryID}-{territorio.TerritoryDescription}");
+                }
+            }
         }
 
         private void BorrarRegion()
@@ -55,11 +83,7 @@ namespace _02EntityFrameworkDatabaseFirst
             }
             else
             {
-                Region x = new Region()
-                {
-                    RegionID = id
-                };
-                dataAccess.BorrarRegion(x);
+                dataAccess.BorrarRegion(id);
             }
         }
 

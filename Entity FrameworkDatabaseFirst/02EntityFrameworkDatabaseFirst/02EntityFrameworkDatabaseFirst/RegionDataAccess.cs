@@ -62,11 +62,11 @@ namespace _02EntityFrameworkDatabaseFirst
         internal void BorrarRegion(int id)
         {
             Region region = ObtenerRegion(id);
-            if(region ! = null)
+            if(region !=null)
             {
-
+              entidades.Regions.Remove(region);
+              entidades.SaveChanges();
             }
-            
         }
     }
 }
