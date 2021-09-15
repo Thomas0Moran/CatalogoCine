@@ -39,5 +39,34 @@ namespace _02EntityFrameworkDatabaseFirst
             int id = entidades.Regions.Max(r => r.RegionID);
             return id;
         }
+
+        internal Region ObtenerRegion(int id)
+        {
+            var query = from r in entidades.Regions
+                        where r.RegionID == id
+                        select r;
+            return query.FirstOrDefault();
+        }
+
+        internal void ActualizarRegion(int id, string nombre)
+        {
+            Region region = ObtenerRegion(id);
+            if (region != null)
+            {
+                region.RegionDescription = nombre;
+                entidades.SaveChanges();
+            }
+            
+        }
+
+        internal void BorrarRegion(int id)
+        {
+            Region region = ObtenerRegion(id);
+            if(region ! = null)
+            {
+
+            }
+            
+        }
     }
 }

@@ -42,12 +42,48 @@ namespace _02EntityFrameworkDatabaseFirst
 
         private void BorrarRegion()
         {
-            throw new NotImplementedException();
+            Console.WriteLine();
+            Console.WriteLine("Ingrese el identificador de la region que desee borrar:");
+
+            string idIngresando = Console.ReadLine();
+            int id = Convert.ToInt32(idIngresando);
+
+            Region regionAActualzar = dataAccess.ObtenerRegion(id);
+            if (regionAActualzar == null)
+            {
+                Console.WriteLine("No ingreso el ID de una region existente");
+            }
+            else
+            {
+                Region x = new Region()
+                {
+                    RegionID = id
+                };
+                dataAccess.BorrarRegion(x);
+            }
         }
 
         private void ActualizarRegion()
         {
-            throw new NotImplementedException();
+            Console.WriteLine();
+            Console.WriteLine("Ingrese el identificador de la region que desee actualizar:");
+
+            string idIngresando = Console.ReadLine();
+            int id = Convert.ToInt32(idIngresando);
+
+            Region regionAActualzar = dataAccess.ObtenerRegion(id);
+            if(regionAActualzar == null)
+            {
+                Console.WriteLine("No ingreso el ID de una region existente");
+            }
+            else
+            {
+                Console.WriteLine($"La region a actualizar es: {regionAActualzar.RegionID}-{regionAActualzar.RegionDescription}");
+                Console.WriteLine();
+                string nombre = Console.ReadLine();
+                dataAccess.ActualizarRegion(id, nombre);
+            }
+
         }
 
         private void CrearNuevaRegion()
@@ -57,5 +93,7 @@ namespace _02EntityFrameworkDatabaseFirst
             string nombre = Console.ReadLine();
             dataAccess.CrearNuevaRegion(nombre.Trim());
         }
+
+
     }
 }
