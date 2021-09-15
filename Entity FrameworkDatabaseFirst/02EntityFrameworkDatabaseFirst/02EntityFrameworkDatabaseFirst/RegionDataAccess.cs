@@ -18,5 +18,26 @@ namespace _02EntityFrameworkDatabaseFirst
 
             return query.ToList();
         }
+
+        internal void CrearNuevaRegion(string descripcion)
+        {
+            int id = IdMaximo();
+            id++;
+
+            Region region = new Region()
+            {
+                RegionID = id,
+                RegionDescription = descripcion
+            };
+
+            entidades.Regions.Add(region);
+            entidades.SaveChanges();
+        }
+
+        private int IdMaximo()
+        {
+            int id = entidades.Regions.Max(r => r.RegionID);
+            return id;
+        }
     }
 }

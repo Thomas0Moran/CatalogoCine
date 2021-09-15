@@ -18,6 +18,7 @@ namespace _02EntityFrameworkDatabaseFirst
 
             Console.WriteLine("1- Listar las regiones");
             Console.WriteLine("S- Salir de la aplicacion");
+            Console.WriteLine("");
 
             Console.WriteLine("Ingrese la opcion seleccionada");
 
